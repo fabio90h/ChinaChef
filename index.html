@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>China Chef</title>
+    <!--SCRIPT  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!--BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet"  href="./index.css">
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Dancing+Script" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--NAVIGATION BAR  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand text-white" href="#" id="nav-home">China Chef</a>
+      <button class="navbar-toggler border-white" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link text-white" href="#menu">Menu</a>
+          <a class="nav-item nav-link text-white" href="#map">Location</a>
+          <a class="nav-item nav-link text-white" href="#contact_section">Contact</a>
+        </div>
+      </div>
+    </nav> <!--/NAVIGATION BAR  -->
+
+    <div class="content0">
+        <div class="container-fluid text-center py-5" id='title'>
+            <div class="container text-center pb-4">
+              <br>
+              <h1 class="display-4" id="china_chef">China Chef</h1>
+              <p class="lead" id="title_description">Authentic Chinese Cusine</p>
+              <br>
+            </div>
+          </div>
+    </div>
+
+    <div class="content">
+      <!--==================Menu===================-->
+        <!--Background-->
+        <div class="container-fluid py-4 my-0" id='menu-background'>
+            <!--Container-->
+            <div class="bx-shadow container my-2" id='card-background'>
+
+            <!--Row-->
+            <div class="row">
+
+                <!--Header of Menu-->
+                <h2 class="col-12 text-center py-3 mb-3 bg-warning" id="header">Menu</h2>
+                {# <p>This is ower selection of choices to choose from our food menu. Each are made with the freshest ingredient to you satisfaction.</p> #}
+
+                <!--Column 1-->
+                <div class="col-6 col-sm-6 col-lg-4 w-25 pb-3">
+                <!--Card 1-->
+                <a href="#pork_and_beef_modal" data-toggle="modal">
+                    <div class= "menu_options text-center border bg-light">
+                    <img class="mx-auto bg-light border border-primary rounded-circle h-10 w-25 p-2 m-2" src="./images/Icon/meat_icon.png" alt="Pork and Beef">
+                    <h5 class="card-title mx-auto">Pork & Beef</h5>
+                    </div>
+                </a>
+                <!--/Card 1-->
+                </div> <!--/Column 1-->
+
+                <!--Column 2-->
+                <div class="col-6 col-sm-6 col-lg-4 w-25 pb-3">
+                <!--Card 2-->
+                <a href="#seafood_modal" data-toggle="modal">
+                    <div class="menu_options border text-center">
+                    <img class="seafood mx-auto border border-primary rounded-circle h-10 w-25 p-2 m-2" src="./images/Icon/fish_icon.png" alt="Seafood Section">
+                    <h5 class="card-title mx-auto">Seafood</h5>
+                    </div> <!--/Card 2-->
+                </a>
+                </div> <!--/Column 2-->
+
+                <!--Column 3-->
+                <div class="col-6 col-sm-6 col-lg-4 w-25 pb-3">
+                <!--Card 3-->
+                <a href="#chef_special_modal" data-toggle="modal">
+                    <div class="card-fish border text-center">
+                    <img class="seafood mx-auto border border-primary rounded-circle h-10 w-25 p-2 m-2" src="./images/Icon/chef_icon.png" alt="Seafood Section">
+                    <h5 class="card-title mx-auto">Chef Special</h5>
+                    </div> <!--/Card 3-->
+                </a>
+                </div> <!--/Column 3-->
+
+                <!--Column 4-->
+                <div class="col-6 col-sm-6 col-lg-4 w-25 pb-3">
+                <!--Card 4-->
+                <a href="#noodle_modal" data-toggle="modal">
+                    <div class="card-fish border text-center">
+                    <img class="seafood mx-auto border border-primary rounded-circle h-10 w-25 p-2 m-2" src="./images/Icon/noodles_icon.png" alt="Seafood Section">
+                    <h5 class="card-title mx-auto">Noodles</h5>
+                    </div> <!--/Card 4-->
+                </a>
+                </div> <!--/Column 4-->
+
+                <!--Column 5-->
+                <div class="col-6 col-sm-6 col-lg-4 w-25 pb-3">
+                <!--Card 5-->
+                <a href="#rice_modal" data-toggle="modal">
+                    <div class="card-fish border text-center">
+                    <img class="seafood mx-auto border border-primary rounded-circle h-10 w-25 p-2 m-2" src="./images/Icon/rice_icon.png" alt="Seafood Section">
+                    <h5 class="card-title mx-auto">Rice</h5>
+                    </div> <!--/Card 5-->
+                </a>
+                </div> <!--/Column 5-->
+
+                <!--Column 6-->
+                <div class="col-6 col-sm-6 col-lg-4 w-25 pb-3">
+                <!--Card 6-->
+                <a href="#casserole_modal" data-toggle="modal">
+                    <div class="card-fish border text-center">
+                    <img class="seafood mx-auto border border-primary rounded-circle h-10 w-25 p-2 m-2" src="./images/Icon/casserole.png" alt="Seafood Section">
+                    <h5 class="card-title mx-auto">Casserole</h5>
+                    </div> <!--/Card 6-->
+                </a>
+                </div> <!--/Column 6-->
+
+            </div> <!--/Row-->
+            </div> <!--/Container -->
+        </div> <!--/Background-->
+        <!--==================/Menu===================-->
+    </div>
+
+    <div class="content2">
+      <!--==================Gallery==================-->
+  <!--Background-->
+  <div class="container-fluid text-center bg-white" id="gallery">
+
+        <!--Title-->
+        <div class="row">
+          <h2 class="col-12 text-center py-3 mb-3" id="header">Gallery</h2>
+        </div><!--/Title-->
+  
+          <!--Row-->
+          <div class="row">
+            <div class="col-6 col-sm-4 col-lg-3 px-0">
+              <a href="#"><img class="img-thumbnail yelp" src="https://s3-media2.fl.yelpcdn.com/bphoto/HbCPDpUMlP9krkv6Qj0dJA/o.jpg" alt="Beef Brisket"></a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3 px-0">
+              <a href="#"><img class="img-thumbnail yelp" src="https://s3-media2.fl.yelpcdn.com/bphoto/-vsvj5rUs1mu-YincUSKTw/o.jpg" alt="Beef Noodle"></a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3 px-0">
+              <a href="#"><img class="img-thumbnail yelp" src="https://s3-media2.fl.yelpcdn.com/bphoto/gORSKiKYAAQjlS-4wvDGgg/o.jpg" alt="Curry Beef"></a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3 px-0">
+              <a href="#"><img class="img-thumbnail yelp" src="https://s3-media2.fl.yelpcdn.com/bphoto/I8TRDMSP_lPpaThQD0A59w/o.jpg" alt="Curry Beef"></a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3 px-0">
+              <a href="#"><img class="img-thumbnail yelp" src="https://s3-media1.fl.yelpcdn.com/bphoto/cvAp10NkSu57vH67LtNkXQ/o.jpg" alt="Curry Beef"></a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3 px-0">
+              <a href="#"><img class="img-thumbnail yelp" src="https://s3-media3.fl.yelpcdn.com/bphoto/_xuVj72CIu5rswlEVuEVDA/o.jpg" alt="Curry Beef"></a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3 px-0">
+              <a href="#"><img class="img-thumbnail yelp" src="https://s3-media4.fl.yelpcdn.com/bphoto/f1Irya6zLBUVu9BTrTq_6g/o.jpg" alt="Curry Beef"></a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3 px-0">
+              <a href="#"><img class="img-thumbnail yelp" src="https://s3-media4.fl.yelpcdn.com/bphoto/Jn23XOms-633huOG4MV8fg/o.jpg" alt="Assorted Shredded Meat"></a>
+            </div>
+          </div><!--Row-->
+          <!--Collapse-->
+          <div class="collapse" id="collapseGallery">
+              <!--Row-->
+              <div class="row">
+                <div class="col-6 col-sm-4 col-lg-3 px-0">
+                  <a href="#"><img class="img-thumbnail yelp" src="https://s3-media1.fl.yelpcdn.com/bphoto/kLQbPBHyJqfBR6MVMZl6Vw/o.jpg" alt="Steaned Lobster with Noodels"></a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 px-0">
+                  <a href="#"><img class="img-thumbnail yelp" src="https://s3-media4.fl.yelpcdn.com/bphoto/zATlmucBUNT9xhtZUj1OXA/o.jpg" alt="Eggs with Shrimp"></a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 px-0">
+                  <a href="#"><img class="img-thumbnail yelp" src="https://s3-media1.fl.yelpcdn.com/bphoto/k2BVLxt_HOkRvD5mhXl1yg/o.jpg" alt="Salt and Pepper Fish"></a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 px-0">
+                  <a href="#"><img class="img-thumbnail yelp" src="https://s3-media3.fl.yelpcdn.com/bphoto/LtVsY-uw5_t6sIXHK2L3Gg/o.jpg" alt="Steam Beans"></a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 px-0">
+                  <a href="#"><img class="img-thumbnail yelp" src="https://s3-media1.fl.yelpcdn.com/bphoto/md4Tb9oyJPrGQdLQcn4B0Q/o.jpg" alt="Eggplant With Pork Belly"></a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 px-0">
+                  <a href="#"><img class="img-thumbnail yelp" src="https://s3-media4.fl.yelpcdn.com/bphoto/IccjEyJxj8TmAcMsPcU6MQ/o.jpg" alt="Beef and Thin Noodle"></a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 px-0">
+                  <a href="#"><img class="img-thumbnail yelp" src="https://s3-media2.fl.yelpcdn.com/bphoto/9P9p2FlIuEfLQjbE9QJekQ/o.jpg" alt="Dumpling"></a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 px-0">
+                  <a href="#"><img class="img-thumbnail yelp" src="https://s3-media4.fl.yelpcdn.com/bphoto/Q1iLqgHJRBvMyDzZ-pI4LQ/o.jpg" alt="Szichuan beef"></a>
+                </div>
+              </div> <!--/Row-->
+          </div> <!--/Collapse-->
+          <!--Show More-->
+          <div class="row">
+              <div class="col-lg-12 mx-auto my-2">
+                <button class="btn btn-outline-dark" id="showMore" type="button" data-toggle="collapse" data-target="#collapseGallery" aria-expanded="false" aria-controls="collapseExample">
+                  Show more
+                </button>
+              </div>
+          </div><!--/Show More-->
+    </div> <!--/Background-->
+    <!--==================/Gallery==================-->
+  
+    <!--==================Location===================-->
+    <!--Location-->
+    <div id="map" class="container-fluid text-white bg-dark text-center pb-4">
+      <script>
+         var marker;
+         function initMap() {
+           var uluru = {lat: 42.594069, lng: -83.128270};
+           var map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 20,
+             center: uluru
+           });
+           var marker = new google.maps.Marker({
+             position: uluru,
+             map: map,
+             animation: google.maps.Animation.DROP,
+             title: "5120 Rochester Rd Troy, MI 48085"
+           });
+           marker.addListener('click', toggleBounce);
+         }
+         function toggleBounce() {
+          if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+          } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+          }
+        }
+       </script>
+    </div><!--/Location-->
+    <!--==================/Location==================-->
+  
+    <!--==================Contact===================-->
+    <div class="container-fluid pb-4 contact_us" id="contact_section">
+        <h1 class="display-4 text-white contact_title">Contact Us</h1>
+        <div class="row">
+  
+          <div class="col-lg-9 text-white contact_title">
+            <h5>Phone: (248)-740-8899</h5>
+            <h5>5120 Rochester Rd Troy, MI 48085</h5>
+          </div>
+  
+          <div class="col-lg-3 text-center">
+            <!--Table-->
+            <table class="table table-striped table-dark table-sm w-60">
+              <thead>
+                <tr>
+                  <th scope="col">Day</th>
+                  <th scope="col">Open</th>
+                  <th scope="col">Close</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Monday</th>
+                  <td>11:00am</td>
+                  <td>9:00pm</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tuesday</th>
+                  <td>Closed</td>
+                  <td>Closed</td>
+                </tr>
+                <tr>
+                  <th scope="row">Wednesday</th>
+                  <td>11:00am</td>
+                  <td>9:00pm</td>
+                </tr>
+                <tr>
+                  <th scope="row">Thursday</th>
+                  <td>11:00am</td>
+                  <td>9:00pm</td>
+                </tr>
+                <tr>
+                  <th scope="row">Friday</th>
+                  <td>11:00am</td>
+                  <td>9:00pm</td>
+                </tr>
+                <tr>
+                  <th scope="row">Saturday</th>
+                  <td>11:00am</td>
+                  <td>9:00pm</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sunday</th>
+                  <td>11:00am</td>
+                  <td>9:00pm</td>
+                </tr>
+              </tbody>
+            </table>   <!--Table-->
+          </div>
+        </div>
+    </div>
+    <!--==================/Contact===================-->
+  
+    <!--*********************************************-->
+    <!--********************Extra********************-->
+    <!--*********************************************-->
+  
+    <!--==================Pork & Beef==================-->
+    <div class="modal fade" id="pork_and_beef_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="exampleModalLongTitle">Pork & Beef</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> <!--Header-->
+          <!--Body-->
+          <div class="modal-body">
+            <table class="table table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Dish</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Beef with Ginger, Onion, and Mushroom</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mongolian Beef</th>
+                  <td>$11.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Pepper Steak</th>
+                  <td>$11.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Beef Broccoli</th>
+                  <td>$11.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Deep Fried Pork Chop with Pepper and Salt</th>
+                  <td>$11.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Pork with Chili Sauce</th>
+                  <td>$11.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Deep Fried Pork Chop with Sweet and Sour Sauce</th>
+                  <td>$11.95</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!--/Body-->
+        </div>
+      </div>
+    </div>
+    <!--==================/Pork & Beef==================-->
+  
+    <!--=====================Seafood====================-->
+    <div class="modal fade" id="seafood_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="exampleModalLongTitle">Seafood</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> <!--Header-->
+          <!--Body-->
+          <div class="modal-body">
+            <table class="table table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Dish</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Shrimp with Mixed Vegetable</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Shrimp in Lobster Sauce</th>
+                  <td>$14.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Fillet of Fish with Black Bean Sauce</th>
+                  <td>$12.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Fillet of Fish with Chilli Sauce</th>
+                  <td>$12.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Deep Fried Calamari with Salt and Pepper</th>
+                  <td>$12.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Fried Shrimp with Sweet Cream Sauce</th>
+                  <td>$14.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mixed Seafood and Tofu Hot Pot</th>
+                  <td>$15.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mixed Seafood Warbar</th>
+                  <td>$15.95</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!--/Body-->
+        </div>
+      </div>
+    </div>
+    <!--=====================Seafood====================-->
+  
+    <!--=====================Chef Special====================-->
+    <div class="modal fade" id="chef_special_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="exampleModalLongTitle">Chef Special</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> <!--Header-->
+          <!--Body-->
+          <div class="modal-body">
+            <table class="table table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Dish</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Beef and Chinese Broccoli</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Salt and Pepper Shrimp with Shell</th>
+                  <td>$12.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sauteed Shrimp and Scrambled Egg</th>
+                  <td>$10.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sauteed Shrimp</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Salted and Pepper with Mixed Seafood</th>
+                  <td>$15.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Half Steamed Chicken with Ginger and Green Onion</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Half Steamed Chicken</th>
+                  <td>$13.25</td>
+                </tr>
+                <tr>
+                  <th scope="row">Beef with Bitter Melon</th>
+                  <td>$15.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">House Special Stir Fried with Spicy XO Sauce</th>
+                  <td>$14.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Fillet of Fish with Chinese Vegetable</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bitter Melon and Spareribs</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Deep Fried Pork Chop with Dark Vinegar Sauce</th>
+                  <td>$11.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Deep Fried Pork Chop with Garlic Flavor</th>
+                  <td>$11.95</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!--/Body-->
+        </div>
+      </div>
+    </div>
+    <!--=====================Chef Special====================-->
+  
+    <!--=====================Noodle====================-->
+    <div class="modal fade" id="noodle_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="exampleModalLongTitle">Seafood</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> <!--Header-->
+          <!--Body-->
+          <div class="modal-body">
+            <table class="table table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Dish</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Braised E Foo Noodle</th>
+                  <td>$10.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">House Special Vermicelli</th>
+                  <td>$14.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Vermicelli with Shrimp and Chicken Singapore Style</th>
+                  <td>$11.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Rice Noodle with Beef and Soy Sauce</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Rice Noodle with Beef and Black Bean Sauce</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Rice Noodle With Shrimp and Scrambled Egg Sauce</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Chicken and Pan Fried Noodle</th>
+                  <td>$12.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Pan Fried Noodle and Seafood</th>
+                  <td>$15.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Assorted Shredded Meat Chow Mein</th>
+                  <td>$12.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Shredded Chicken, Shrimp Lo Mein</th>
+                  <td>$12.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Shredded Beef Udon with Black Pepper Sauce</th>
+                  <td>$12.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Rice Vermicelli Home Style (Shrimp and Pork)</th>
+                  <td>$11.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cantonese Chow Mein (Shrimp and Chicken)</th>
+                  <td>$14.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Beef and Pan Fried Noodle</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Shrimp Lo Mein</th>
+                  <td>$14.95</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!--/Body-->
+        </div>
+      </div>
+    </div>
+    <!--=====================Noodle====================-->
+  
+    <!--=====================Rice====================-->
+    <div class="modal fade" id="rice_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="exampleModalLongTitle">Rice</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> <!--Header-->
+          <!--Body-->
+          <div class="modal-body">
+            <table class="table table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Dish</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Vegetable Fried Rice</th>
+                  <td>$7.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Chicken Fried Rice</th>
+                  <td>$8.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Beef Fried Rice</th>
+                  <td>$9.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Pork Fried Rice</th>
+                  <td>$9.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Shrimp Fried Rice</th>
+                  <td>$9.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Young Chow Fried Rice</th>
+                  <td>$10.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Salt Fish and Chicken Fried Rice</th>
+                  <td>$15.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Fried Rice with Shrimp, Scallop, Chicken & Pork in Oyster Sauce</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Seafood Fried Rice</th>
+                  <td>$12.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Steamed White Rice</th>
+                  <td>$2.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Beef Brisket with Steamed White Rice</th>
+                  <td>$9.45</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!--/Body-->
+        </div>
+      </div>
+    </div>
+    <!--=====================Rice====================-->
+  
+    <!--=====================Casserole====================-->
+    <div class="modal fade" id="casserole_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="exampleModalLongTitle">Casserole</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> <!--Header-->
+          <!--Body-->
+          <div class="modal-body">
+            <table class="table table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Dish</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Chicken Hot Pot</th>
+                  <td>$12.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Chicken with Black Bean Sauce Hot Pot</th>
+                  <td>$12.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ground Pork Salt Fish and Eggplant Hot Pot</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Salted Fish and Chicken Tofu Hot Pot</th>
+                  <td>$12.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Beef Brisket Hot Pot</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Beef Brisket with Curry Hot Pot</th>
+                  <td>$14.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Deep Fired Fish Fillet and Tofu Hot Pot</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Stir Fried Frog with Ginger, Green Onion and Peanut Hot Pot</th>
+                  <td>$19.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Seafood Tofu Hot Pot</th>
+                  <td>$15.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Beef with Golden Mushroom and Green Bean Thread in Satay Sauce</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Preserve Meat and Taro</th>
+                  <td>$13.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">BBQ Pork, Chicken and Seafood Hot Pot</th>
+                  <td>$15.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">XO Sauce Deep Fried Fish Fillet & Eggplant Hot Pot</th>
+                  <td>$14.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Three Kinds of Mushroom and Tofu Hot Pot</th>
+                  <td>$13.95</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!--/Body-->
+        </div>
+      </div>
+    </div>
+    <!--=====================Casserole====================-->
+    </div>
+
+
+    <!--GOOGLE MAPS API SCRIPT -->
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKF8t5HcUqL93BNXNPnJJkEABB9NLvpBE&callback=initMap"
+      type="text/javascript">
+    </script> <!--/GOOGLE MAPS API SCRIPT -->
+    <!--JAVA SCRIPT -->
+    <script type="text/javascript" src="./index.js"></script><!--/JAVASCRIPT -->
+
+  </body>
+
+  <footer>
+        <div class="container-fluid bg-warning h-25">
+            <small>Developed By Fabio Hsu. 2018</small>
+        </div>
+  </footer>
+</html>

@@ -1,0 +1,90 @@
+.bx-shadow{
+    box-shadow: 0 0 15px rgba(0,0,0, .8) !important;
+  }
+  
+  a{
+    text-decoration: none !important;
+    color: black;
+  }
+  
+  .content0{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/originals/87/83/66/87836677d3e7bf61f8872813211f9ed5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+  }
+  
+  .content{
+    background-image: url("https://truffle-assets.imgix.net/64a9c8c3-Instant_soupless_noodles_h.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  .content2{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://xdesktopwallpapers.com/wp-content/uploads/2011/01/White-Rice-With-Steam.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: auto;
+  }
+  
+  #nav-home{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+  }
+  #title{
+    font-size: 55px;
+  }
+  #china_chef{
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    color: white;
+  }
+  #title_description, .contact_title{
+    font-family: 'Cinzel', serif;
+    color: white;
+  }
+  
+  #menu-background{
+    /* background-image: url("https://assets.visitphilly.com/wp-content/uploads/2017/12/philadelphia-chinese-lantern-festival-jfusco-for-hpi-dragon-1200VP.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background-color: transparent;
+  }
+  
+  #card-background{
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.95;
+  }
+  
+  .contact_us{
+    background-color: transparent;
+  }
+  
+  .yelp{
+    height: 200px;
+    width: 100%;
+  }
+  
+  #map {
+    height: 400px;
+    width: 100%;
+   }
+  
+  
+  /*==================*/
+  /* Pseudo-elements */
+  /*==================*/
+  
+  /* .menu_options:hover{
+    background-color: blue !important;
+    color: white;
+  } */
+  
